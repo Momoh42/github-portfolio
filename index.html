@@ -13,32 +13,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!--
-    Images are from https://unsplash.com/
-    -->
 
 
 </head>
 <body>
     <nav id="scrolling_navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Personal Portfolio</a>
+          <a class="navbar-brand" href="#">Mohamed Moudjahed</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav fw-bold">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about">À propos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#travel">Travel</a>
+                <a class="nav-link" href="#travel">Mon parcours</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="#blog">Réalisations</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -53,48 +50,46 @@
         <section class="min-vh-100 d-flex flex-wrap align-content-center" id="home" style="background-image: url('image/home.jpg'); background-size: cover;">
           <div class="container d-flex align-items-center py-5">
               <div class="col text-center bg-light m-4 p-4 text-dark bg-opacity-50 rounded-5 border border-2 border-white">
-                <img src="image/success.png" class="img-fluid col-lg-2 col-sm-6 col-xs-6 mb-4"> 
-                <p class="display-2 text-secondary mb-3">Personal Portfolio</p>
-                <p class="text-secondary fs-5 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus lectus, dapibus a erat quis, venenatis feugiat nulla. Phasellus sit amet ante sapien.</p>
-                <a class="btn btn-success btn-lg active rounded-pill mb-3" href="#about">About</a>
-                <a class="btn btn-light btn-lg rounded-pill mb-3" href="#contact">Contact</a>
+                <div class="text-center mt-10">
+                  <p class="display-2 text-black mb-3 align-line">
+                     Salut ! <span class="wave-emoji">👋🏻</span> <br>
+                     Je suis Mohamed <br>
+                  </p>
+                </div>
+                <p class="text-secondary fs-5 mb-6">A la recherche d'une opportunité professionnelle en tant que 
+                  <span id="animated-text" class="font-bold"></span
+                  ><span class="cursor">|</span>
+                </p>
+                <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="btn-linkedin">
+                  <i class="fab fa-linkedin"></i> <!-- Icône LinkedIn -->
+                </a>
+                <a class="btn btn-success btn-lg active rounded-pill mb-3" href="#about">À propos de moi</a>
+                <a class="btn btn-light btn-lg rounded-pill mb-3" href="#contact">Me contacter</a>
             </div>
           </div>
         </section>
 
         <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="container py-5" id="about">
             <div class="text-center py-5">
-                <h2 class="fw-bolder">About</h2>
-                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="fw-bolder">Description</h2>
+                <p class="fs-5">Mohamed : Explorer, Analyser, Innover avec la Data</p>
             </div>
             <div class="row">
                 <div class="col-lg-4" >
                     <img class="img-fluid rounded-5" src="image/19199262.png">
                 </div>
                 <div class="col-lg-7 offset-lg-1">
-                    <p class="lh-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, molestiae commodi? Cum ullam voluptatum fuga modi? Quos possimus corrupti quisquam? Ratione, hic repellat distinctio iste at cumque ad harum architecto odio rem excepturi itaque minima praesentium quibusdam dolorum perferendis voluptas!</p>
-                    <h3 class="fw-bold fs-4">Skills</h3>
+                      
+                    <p class="lh-lg mb-6 text-justify">Aujourd’hui encore, de nombreuses entreprises peinent à tirer parti de la richesse de leurs données. Entre <strong>complexité technologique</strong>, <strong>manque d’intégration entre les équipes</strong> et <strong>faible maturité data</strong>, les obstacles sont nombreux. Pourtant, une <strong>gestion optimisée des données</strong> est le socle indispensable à toute transformation par l’<strong>Intelligence Artificielle</strong>. </p>
+
+                    <p class="lh-lg mb-6 text-justify"><strong>Titulaire d’un Master en Machine Learning & Data Mining</strong>, je mets mon expertise en <strong>Data</strong> et <strong>Intelligence Artificielle</strong> au service de cette transformation. Passionné par l’<strong>exploration de nouvelles approches</strong> et la <strong>valorisation des données</strong>, j’aime relever les défis métiers en développant des solutions <strong>pragmatiques et performantes</strong>.</p>
                     
-                    <p class="mb-0" >HTML:</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped bg-greenyellow" style="width: 99%;">99%</div>
-                    </div>
-                    <p class="mb-0" >CSS:</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped bg-info" style="width: 99%;">99%</div>
-                    </div>
-                    <p class="mb-0" >JS:</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped bg-warning" style="width: 99%;">99%</div>
-                    </div>
-                    <p class="mb-0" >BOOTSTRAP 5:</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped bg-danger" style="width: 99%;">99%</div>
-                    </div>
-                    <p class="mb-0" >REACT:</p>
-                    <div class="progress mb-3">
-                        <div class="progress-bar progress-bar-striped bg-green" style="width: 99%;">99%</div>
-                    </div>
+                    <p class="lh-lg mb-6 text-justify">Grâce à une approche alliant <strong>rigueur technique</strong> et <strong>compréhension des enjeux stratégiques</strong>, je conçois des solutions adaptées, du cas d’usage le plus simple au plus complexe. <strong>Motivé et engagé</strong>, je suis prêt à apporter mon <strong>savoir-faire</strong> et ma <strong>créativité</strong> à  à des projets innovants pour aider les entreprises à libérer tout le potentiel de leurs données.</p>
+                    
+                    <p>
+                      <span class="emoji">👉🏻</span>
+                      Prêt à exploiter tout le potentiel de vos données ? Échangeons !
+                    </p>
                 </div>
 
             </div>

@@ -26,6 +26,11 @@ body {
   background: linear-gradient(to top right, #80ffdb, #5390d9) !important;
 }
 
+.text-black {
+  color: black !important;
+  opacity: 0.8;
+}
+
 .text-secondary {
   color: rgba(143, 136, 136, 0.884) !important;
   opacity: 0.8;
@@ -66,6 +71,12 @@ body {
 
 .modal {
   text-align: center;
+}
+
+
+.align-line {
+  display: inline-block;
+  text-align: left; 
 }
 
 #gallery img {
@@ -261,4 +272,55 @@ body {
 }
 #exampleModal.custom .carousel-indicators li.active {
   background: white;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.wave-emoji {
+  display: inline-block;
+  animation: wave-hand 1s infinite;
+  transform-origin: 70% 70%; /* Point d'origine pour le mouvement */
+}
+
+@keyframes wave-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.emoji {
+  font-size: 2em;
+  color: white;
+  animation: slide 0.75s infinite alternate;
+  display: inline-block;  /* S'assurer que l'emoji est sur la même ligne que le texte */
+  margin-right: 8px; /* Ajouter un petit espace entre l'emoji et le texte */
+}
+
+@keyframes slide {
+  0% { transform: translateX(-10%); }  /* Début légèrement à gauche */
+  100% { transform: translateX(10%); } /* Fin légèrement à droite */
 }
