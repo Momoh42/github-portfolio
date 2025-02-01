@@ -324,3 +324,9 @@ body {
   0% { transform: translateX(-10%); }  /* Début légèrement à gauche */
   100% { transform: translateX(10%); } /* Fin légèrement à droite */
 }
+
+.card-img-top {
+  width: 355px;
+  height: 250px;
+  object-fit: cover; /* Cela va tronquer l'image tout en maintenant ses proportions */
+}
