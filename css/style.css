@@ -326,7 +326,7 @@ body {
 }
 
 .card-img-top {
-  width: 355px;
-  height: 250px;
-  object-fit: cover; /* Cela va tronquer l'image tout en maintenant ses proportions */
+  width: 100%;
+  height: 180px; /* Vous pouvez ajuster cette hauteur */
+  object-fit: cover; /* Cela garantit que l'image remplit l'espace sans être déformée */
 }
