@@ -330,3 +330,20 @@ body {
   height: 180px; /* Vous pouvez ajuster cette hauteur */
   object-fit: cover; /* Cela garantit que l'image remplit l'espace sans être déformée */
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Assure que la carte occupe toute la hauteur disponible de son conteneur */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permet au contenu de prendre l'espace restant */
+  justify-content: space-between; /* Positionne les éléments à l'intérieur de .card-body */
+}
+
+.d-flex {
+  margin-top: auto; /* Pousse les boutons vers le bas */
+}
