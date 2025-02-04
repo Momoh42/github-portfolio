@@ -348,17 +348,35 @@ body {
   margin-top: auto; /* Pousse les boutons vers le bas */
 }
 
-.carousel {
-  display: flex;
-  overflow: hidden; /* Cache les éléments hors de la vue */
-  white-space: nowrap; /* Maintient les éléments sur une seule ligne */
-  gap: 30px; /* Espace entre les logos */
-  align-items: center; /* Centrer verticalement si nécessaire */
-  justify-content: center; /* Centrer horizontalement */
+.logos-section {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
 }
 
-.carousel img {
-  height: 40px; /* Fixer la hauteur des logos */
-  width: 100px; /* Forcer la largeur à être égale */
-  object-fit: contain; /* Assure que les logos s'adaptent sans être déformés */
+.carousel2-container {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel2 {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.carousel2 img {
+  height: 30px; /* Ajustez la hauteur selon vos besoins */
+  margin: 0 20px; /* Espacement entre les logos */
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
 }
