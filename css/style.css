@@ -347,3 +347,18 @@ body {
 .d-flex {
   margin-top: auto; /* Pousse les boutons vers le bas */
 }
+
+.carousel {
+  display: flex;
+  overflow: hidden; /* Cache les éléments hors de la vue */
+  white-space: nowrap; /* Maintient les éléments sur une seule ligne */
+  gap: 30px; /* Espace entre les logos */
+  align-items: center; /* Centrer verticalement si nécessaire */
+  justify-content: center; /* Centrer horizontalement */
+}
+
+.carousel img {
+  height: 40px; /* Fixer la hauteur des logos */
+  width: 100px; /* Forcer la largeur à être égale */
+  object-fit: contain; /* Assure que les logos s'adaptent sans être déformés */
+}
