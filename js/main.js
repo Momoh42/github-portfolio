@@ -44,3 +44,6 @@ function typeAnimation() {
 
   setTimeout(typeAnimation, speed);
 }
+
+// Lancer l'animation après le chargement de la page
+document.addEventListener("DOMContentLoaded", typeAnimation);
